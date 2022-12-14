@@ -10,7 +10,9 @@ const app = fastify({
 
 const init = async () => {
   try {
-    const res = await app.listen(process.env.PORT || 3000);
+    const res = await app.listen({
+      port: parseInt(process.env.PORT || '3000', 10),
+    });
     console.log(res);
   } catch (err) {
     console.error(err);
