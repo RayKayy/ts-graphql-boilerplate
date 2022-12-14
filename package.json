@@ -14,7 +14,8 @@
     "build": "tsc",
     "clear": "rm -rf ./dist",
     "lint": "eslint ./src --ext .js,.jsx,.ts,.tsx",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "prepare": "husky install"
   },
   "devDependencies": {
     "@types/mocha": "^10.0.1",
